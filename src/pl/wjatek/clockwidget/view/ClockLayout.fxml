@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: rgba(0, 0, 0, 0.0); -fx-background-radius: 100;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="pl.wjatek.clockwidget.controller.ClockController">
+   <children>
+      <Circle layoutX="100.0" layoutY="100.0" radius="100.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle layoutX="100.0" layoutY="100.0" radius="90.0" stroke="#1e6ed0" strokeWidth="10.0">
+         <effect>
+            <Bloom />
+         </effect>
+      </Circle>
+      <Arc fx:id="arc" layoutX="100.0" layoutY="100.0" length="270.0" radiusX="99.0" radiusY="99.0" startAngle="45.0" stroke="#1e6ed0" strokeLineCap="BUTT" strokeWidth="0.0" type="ROUND" />
+      <Label fx:id="clockLabel" layoutX="36.0" layoutY="73.0" prefHeight="44.0" prefWidth="128.0" text="00:00" textFill="#1e6ed0">
+         <font>
+            <Font name="Consolas Bold" size="46.0" />
+         </font>
+         <effect>
+            <Bloom threshold="0.32" />
+         </effect>
+      </Label>
+   </children>
+</Pane>
