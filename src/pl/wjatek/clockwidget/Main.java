@@ -1,8 +1,5 @@
 package pl.wjatek.clockwidget;
 
-import java.awt.Dimension;
-import java.awt.Toolkit;
-
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -17,8 +14,6 @@ public class Main extends Application {
 		try {
 			FXMLLoader loader = new FXMLLoader(this.getClass().getResource("view/MainPane.fxml"));
 			Pane mainPane = loader.load();
-			
-			Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
 			
 			Scene mainScene = new Scene(mainPane, 200, 200);
 			mainScene.setFill(null);
